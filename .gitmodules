@@ -1,0 +1,3 @@
+[submodule "ESP32-S3-Touch-AMOLED-2.16"]
+	path = ESP32-S3-Touch-AMOLED-2.16
+	url = https://github.com/waveshareteam/ESP32-S3-Touch-AMOLED-2.16.git

@@ -31,6 +31,3 @@ npm-debug.log*
 managed_components/
 .cache/
 sdkconfig
-
-# 第三方参考仓库（waveshare 官方，独立 git，不纳入本项目）
-ESP32-S3-Touch-AMOLED-2.16/
