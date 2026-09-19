@@ -1,0 +1,40 @@
+menu "cocompanion"
+
+    menu "Wi-Fi"
+        config COCOMPANION_WIFI_SSID
+            string "Wi-Fi SSID"
+            default ""
+
+        config COCOMPANION_WIFI_PASSWORD
+            string "Wi-Fi Password"
+            default ""
+    endmenu
+
+    menu "AI Chat (OpenAI-compatible)"
+        config COCOMPANION_AI_ENDPOINT
+            string "API endpoint URL"
+            default "https://api.deepseek.com/chat/completions"
+            help
+                Any OpenAI-compatible chat completions endpoint.
+                Examples:
+                  DeepSeek:  https://api.deepseek.com/chat/completions
+                  OpenAI:    https://api.openai.com/v1/chat/completions
+                  Qwen:      https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+
+        config COCOMPANION_AI_API_KEY
+            string "API key"
+            default ""
+
+        config COCOMPANION_AI_MODEL
+            string "Model name"
+            default "deepseek-chat"
+            help
+                deepseek-chat, gpt-4o-mini, qwen-turbo, ...
+
+        config COCOMPANION_AI_MAX_TOKENS
+            int "Max output tokens"
+            default 512
+            range 64 4096
+    endmenu
+
+endmenu
